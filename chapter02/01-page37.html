@@ -1,0 +1,43 @@
+<!-- 
+From page 37 of the book Responsive Design with HTML5 and CSS3
+Author of the book: Ben Frain (https://github.com/benfrain)
+
+The following just changes the background colors of the body based
+on the size of the browser's viewport. Resize the browser
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: grey;
+      }
+      @media screen and (max-width: 960px) {
+        body {
+          background-color: red;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        body {
+          background-color: orange;
+        }
+      }
+      @media screen and (max-width: 550px) {
+        body {
+          background-color: yellow;
+        }
+      }
+      /* 
+      My browser (Firefox, Chrome) wasn't capable of resizing to the 
+      book's 320px. I changed the max width here to 400px.
+      */
+      @media screen and (max-width: 400px) {
+        body {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+  </body>
+</html>
